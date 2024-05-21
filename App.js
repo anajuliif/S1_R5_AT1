@@ -1,20 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import CabecalhoComponent from "./src/components/CabecalhoComponent";
+import CorpoComponent from "./src/components/CorpoComponent";
+import RodapeComponent from "./src/components/RodapeComponnent";
+import styles from "./src/styles/StylesheetComponent";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CabecalhoComponent />
+      <CorpoComponent />
+      <RodapeComponent />
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
